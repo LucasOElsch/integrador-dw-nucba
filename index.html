@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <header class="header">
+    <img src="assets/imagenes/logo-removebg-preview.png" alt="">
+    <nav class="navbar">
+        <label for="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle-menu">
+        <ul class="navbar-list">
+            <li><a href="#" class="navbar-link">Inicio</a></li>
+            <li><a href="#" class="navbar-link">Nosotros</a></li>
+            <li><a href="#" class="navbar-link">Productos</a></li>
+            <li><a href="#" class="navbar-link">Contacto</a></li>
+            <li><a href="#" class="navbar-link">Preguntas Frecuentes</a></li>
+            <li><a href="login.html" class="navbar-link-login">Inicia Sesión</a></li>
+        </ul>
+    </nav>
+   </header>
+    <main>
+        <div class="cuotas">
+            <p>Hasta 12 cuotas fijas 💳 ENVIOS GRATIS SUPERANDO LOS $23.000 🔥</p>
+        </div>
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="assets/imagenes/producto1.webp" alt=""> 
+                </li>
+                <li>
+                    <img src="assets/imagenes/producto2.png" alt="">
+                </li>
+                <li>
+                    <img src="assets/imagenes/producto3.gif" alt="">
+                </li>
+                <li>
+                    <img src="assets/imagenes/producto4.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <section class="hero">
+            <div class="hero-data">
+                <h2>Nosotros</h2>
+                <p>En High Technology, no solo vendemos gadgets, ¡creamos experiencias! Imagina un lugar donde la tecnología no solo se compra, sino que se vive. Desde los últimos smartphones hasta los dispositivos inteligentes que transforman tu hogar, tenemos todo lo que necesitas para llevar tu vida al siguiente nivel.</p>
+                <button><a href="#">Contáctanos</a></button>
+            </div>
+            <div class="hero-img">
+                <img src="assets/imagenes/logo-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+        <h3>Nuestros beneficios</h3>
+        
+        <section class="info">
+
+            <div class="info-box">
+                
+                <ul>
+                    <li>
+                        <img src="assets/imagenes/icono-de-tarjetas.webp" alt="">
+                        <div class="texto">
+                            <h5>Pagá con crédito y débito</h5>
+                            <span>Plan cuota simple 3 | 6 | 9 y 12 cuotas</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/imagenes/icono-de-envio-gratuito.webp">
+                        <div class="texto">
+                            <h5>Envíos a todo el país y retiro gratis</h5>
+                            <span>Envíos desde Rosario a todo el país</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/imagenes/icono-de-telefono-antiguo.webp" alt="">
+                        <div class="texto">
+                            <h5>Contacto</h5>
+                            <span>Atención Personalizada</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="products-catalogo">  
+            <h2>NUESTROS PRODUCTOS!</h2>
+            <div class="products">
+                <div class="fila fila-1">
+                    <div class="product product-1">
+                        <img src="assets/imagenes/section-catalogoOpciones/pcArmada.png" alt="">
+                        <h4>PC ARMADA</h4>
+                        <hr>
+                    </div>
+                    <div class="product product-2">
+                        <img src="assets/imagenes/section-catalogoOpciones/notebooks.png" alt="">
+                        <h4>NOTEBOOKS</h4>
+                        <hr>
+                    </div>
+                    <div class="product product-3">
+                        <img src="assets/imagenes/section-catalogoOpciones/celulares.png" alt="">
+                        <h4>CELULARES</h4>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="fila fila-2">
+                    <div class="product product-1">
+                        <img src="assets/imagenes/section-catalogoOpciones/auricularesBluetooth.png" alt="">
+                        <h4>AURICULARES BLUETOOTH</h4>
+                        <hr>
+                    </div>
+                    <div class="product product-2">
+                        <img src="assets/imagenes/section-catalogoOpciones/razer.png" alt="">
+                        <h4>PRODUCTOS RAZER</h4>
+                        <hr>
+                    </div>
+                    <div class="product product-3">
+                        <img src="assets/imagenes/section-catalogoOpciones/conectividad.png" alt="">
+                        <h4>CONECTIVIDAD</h4>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="contacto">
+        <section class="form-section">
+            <form class="contact-form">
+                <h2>Contáctanos!</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <div class="ubicacion">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.771744289165!2d-60.678407323556684!3d-32.95703527358892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ac9e1107bc2f%3A0xdbc2c4f5a5005f4d!2sRiobamba%203500-3598%2C%20S2003GTH%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1732377339504!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+    <footer>    
+        <div class="footer-logo">
+            <h2>High Technology Rosario</h2>
+        </div>
+        <div class="footer-info">
+            <ul>
+                <li><strong>Teléfono:</strong> 341-234-5234</li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/hightecnologyrosario" target="_blank">@hightecnologyrosario</a></li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/hightecnologyrosario" target="_blank">High Technology Rosario</a></li>
+                <li><strong>Dirección:</strong> Riobamba 3500-3598, Rosario, Santa Fe</li>
+            </ul>
+        </div>
+    </footer>
+    </main>
+    
+</body>
+</html>
