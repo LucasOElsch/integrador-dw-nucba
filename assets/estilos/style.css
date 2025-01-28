@@ -90,6 +90,7 @@
     max-width: 1200px;
     transition: all 0.3s ease;
     margin-bottom: 60px;
+
 }
 
 .hero:hover {
@@ -287,7 +288,6 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 25px;
-    margin: 20px;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -478,32 +478,42 @@ footer{
 
 /*MOBILE*/
 
- @media (max-width:430px){
+ @media (max-width:765px){
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         font-family: Open Sans, sans-serif;
     }
-    .header{
-        max-width: 430px;
-        img {
-            width: 100px;
-            height: auto;
-            object-fit: cover;
-        }
-    }
+.header {
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+}
+
+.navbar ul {
+    gap: 20px;
+}
+
+.navbar-link-login {
+    padding: 8px 16px;
+}
    
 .navbar ul {
     background-color: #244769;
-    width: 100%;
-    height: calc(100vh - 80px);
+    transition: .5s;
+    width: 100vw;
+    height: calc(400px - 80px);
     position: absolute;
-    top : 80px;
+    top : 60px;
     left: 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     display: none;
 
 }
@@ -518,7 +528,8 @@ footer{
 
 
 .slider-box {
-    height: 200px; /* Adjust height for mobile */
+    height: 200px; 
+    margin-top: 20px;
 }
 
 .slider-box ul {
@@ -659,40 +670,485 @@ align-items: center;
 
 
 footer {
+    width: 100%;
     flex-direction: column;
     height: auto;
-    padding: 20px;
-    gap: 10px;
     text-align: center;
-}
-
-.footer-logo {
-    width: 100%;
-    min-height: auto;
-    margin-bottom: 20px;
-    h2 {
-        font-size: 2em;
-        text-align: center;
-    }
-}
-
-.footer-info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    text-align: center;
-    ul a {
-        color: snow;
-    }
+  
+}
+
+   
     ul li {
         list-style-type: none;
+        color: snow;
+        font-size: 18px;
+    }
 
+    #footer-title{
+        font-size: 38px;
+        font-weight: 800;
     }
 }
 
 
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Open Sans, sans-serif;
+    }
+    .header {
+        padding: 0 20px;
+        height: 60px;
+    }
+    
+    .header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .navbar ul {
+        gap: 20px;
+    }
+    
+    .navbar-link-login {
+        padding: 8px 16px;
+    }
+       
+    .navbar ul {
+        background-color: #244769;
+        transition: .5s;
+        width: 100vw;
+        height: calc(400px - 80px);
+        position: absolute;
+        top : 60px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        
+        display: none;
+    
+    }
+    
+    .navbar i {
+        display: block;
+    }
+       
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+    
+    
+    .slider-box {
+        height: 200px; 
+    }
+    
+    .slider-box ul {
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    .slider-box li {
+        width: 100%;
+    }
+    
+    .slider-box img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @keyframes slide {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+        50% { margin-left: -200%; }
+        70% { margin-left: -200%; }
+        75% { margin-left: -300%; }
+        100% { margin-left: -300%; }
+    }
+    
+    .hero {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .hero-data {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .hero-data h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-data p {
+        font-size: 1rem;
+    }
+    
+    .hero-data button {
+        width: auto;
+        padding: 10px;
+    }
+    
+    .hero-img {
+        margin-top: 20px;
+    }
+    
+    .hero-img img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .info {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .info-box ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .info-box ul li {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .info-box ul li img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .info-box ul li .texto {
+        text-align: center;
+    }
+    
+    .info-box ul li .texto h5 {
+        font-size: 1rem;
+    }
+    
+    .info-box ul li .texto span {
+        font-size: 0.8rem;
+    }
+    
+    .products-catalogo {
+        margin-top: 50px;
+    }
+    
+    .products {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+        margin: 0px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .products .fila {
+       margin: auto;
+        padding: 15px;
+    }
+    
+    .products .fila img {
+        width: 100%;
+    }
+    
+    .products .fila .product h4 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
+    .contacto {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contacto h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contacto #mapa {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+       
+    }
+    
+    .footer-logo {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+    
+        
+        
+       
+        ul a {
+            color: snow;
+        }
+        ul li {
+            list-style-type: none;
+    
+        }
+    }
+    
+@media (max-width: 1280px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Open Sans, sans-serif;
+    }
+    .header {
+        padding: 0 20px;
+        height: 60px;
+        
+    }
+   
+    
+    .header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .navbar ul {
+        gap: 20px;
+    }
+    
+
+   
+    
+  
+       
+    .navbar ul {
+        background-color: #244769;
+        transition: .5s;
+        width: 100vw;
+        height: calc(400px - 80px);
+        position: absolute;
+        top : 60px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+           
+    }
+
+    .navbar-link-login {
+        padding: 8px 16px;
+        margin-top: 10px;
+        width: auto;
+        text-align: center;
+    }
+    .navbar i {
+        display: block;
+    }
+       
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+    
+    
+    .slider-box {
+        height: 200px; 
+    }
+    
+    .slider-box ul {
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    .slider-box li {
+        width: 100%;
+    }
+    
+    .slider-box img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @keyframes slide {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+        50% { margin-left: -200%; }
+        70% { margin-left: -200%; }
+        75% { margin-left: -300%; }
+        100% { margin-left: -300%; }
+    }
+    
+    .hero {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .hero-data {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .hero-data h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-data p {
+        font-size: 1rem;
+    }
+    
+    .hero-data button {
+        width: auto;
+        padding: 10px;
+    }
+    
+    .hero-img {
+        margin-top: 20px;
+    }
+    
+    .hero-img img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .info {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .info-box ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .info-box ul li {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .info-box ul li img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .info-box ul li .texto {
+        text-align: center;
+    }
+    
+    .info-box ul li .texto h5 {
+        font-size: 1rem;
+    }
+    
+    .info-box ul li .texto span {
+        font-size: 0.8rem;
+    }
+    
+    .products-catalogo {
+        margin-top: 50px;
+    }
+    
+    .products {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+        margin: 0px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .products .fila {
+       margin: auto;
+        padding: 15px;
+    }
+    
+    .products .fila img {
+        width: 100%;
+    }
+    
+    .products .fila .product h4 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
+    .contacto {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contacto h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contacto #mapa {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+       
+    }
+    
+    .footer-logo {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+    
+        
+        
+       
+        ul a {
+            color: snow;
+        }
+        ul li {
+            list-style-type: none;
+    
+        }
 }
+

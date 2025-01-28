@@ -207,9 +207,10 @@ body{
     }
 }
   
-@media (max-width: 576px){
+@media (max-width: 765px){
     body{
         max-width: 576px;
+        padding: 20px;
     }
     #volverButton {
         width: 80px;
@@ -221,14 +222,14 @@ body{
     }
 
     #iniciarSesion {
-        width: 100px;
+        width: 100%;
         height: 40px;
         font-size: 0.9em;
     }
 
     .form__register {
         padding: 20px;
-        width: 350px;
+        width: 100%;
         max-width: 400px;
     }
 
